@@ -1,3 +1,6 @@
 package-lock.json
-build
+.git
+.github
+.husky
+dist
 coverage

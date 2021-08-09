@@ -1,1 +1,38 @@
-{"openapi":"3.0.3","info":{"title":"Petstore","description":"Testing the Fastify swagger API","version":"0.1.0"},"components":{"schemas":{}},"paths":{"/":{"get":{"responses":{"200":{"description":"Default Response"}}}},"/example/":{"get":{"responses":{"200":{"description":"Default Response"}}}},"/pets/":{"get":{"tags":["pets"],"description":"post some data","responses":{"200":{"description":"Successful response","content":{"application/json":{"schema":{"description":"Successful response","type":"array","items":{"type":"object","required":["id","name","tag"],"properties":{"id":{"type":"number"},"name":{"type":"string"},"tag":{"type":"string"}}}}}}}}}}},"servers":[{"url":"http://localhost"}]}
+{
+  "openapi": "3.0.3",
+  "info": { "title": "Petstore", "description": "Testing the Fastify swagger API", "version": "0.1.0" },
+  "components": { "schemas": {} },
+  "paths": {
+    "/": { "get": { "responses": { "200": { "description": "Default Response" } } } },
+    "/example/": { "get": { "responses": { "200": { "description": "Default Response" } } } },
+    "/pets/": {
+      "get": {
+        "tags": ["pets"],
+        "description": "post some data",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "Successful response",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["id", "name", "tag"],
+                    "properties": {
+                      "id": { "type": "number" },
+                      "name": { "type": "string" },
+                      "tag": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [{ "url": "http://localhost" }]
+}
