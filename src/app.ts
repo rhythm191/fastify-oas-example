@@ -16,7 +16,7 @@ const app: FastifyPluginAsync<AppOptions> = async (fastify, opts): Promise<void>
             info: {
                 title: "Petstore",
                 description: "Testing the Fastify swagger API",
-                version: "0.2.0",
+                version: "0.2.1",
             },
             servers: [
                 {

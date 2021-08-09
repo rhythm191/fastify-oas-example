@@ -1,6 +1,6 @@
 {
   "openapi": "3.0.3",
-  "info": { "title": "Petstore", "description": "Testing the Fastify swagger API", "version": "0.2.0" },
+  "info": { "title": "Petstore", "description": "Testing the Fastify swagger API", "version": "0.2.1" },
   "components": { "schemas": {} },
   "paths": {
     "/": { "get": { "responses": { "200": { "description": "Default Response" } } } },
